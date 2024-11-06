@@ -1,0 +1,18 @@
+.wrapper {
+    margin-bottom: 5rem;
+}
+
+.wrapper h2 {
+    text-align: center;
+    color: #39434b;
+    margin-bottom: 36px;
+}
+
+.partners {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #d5e4ef;
+    border-radius: 10px;
+    padding: 2.6rem 4rem;
+}

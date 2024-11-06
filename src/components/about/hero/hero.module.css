@@ -1,0 +1,43 @@
+.wrapper {
+  width: 88dvw;
+  margin: 0 auto;
+  height: 651px;
+  border-radius: 10px;
+  background-image: url(/images/about-hero.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.wrapper h2 {
+  color: white;
+  font-size: 3.625rem;
+  text-align: center;
+}
+
+.hero_buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+    border: 0;
+}
+
+.section_one_login_button {
+  width: 8.6875rem;
+  height: 3.375rem;
+  border-radius: 5px;
+  padding: 1rem;
+  background-color: #f3cd50;
+}
+.section_one_signup_button {
+  margin-left: 1rem;
+  width: 8.6875rem;
+  height: 3.375rem;
+  border-radius: 5px;
+  padding: 1rem;
+  border: 1px solid #f3cd50;
+  color: #f3cd50;
+  background-color: transparent;
+}

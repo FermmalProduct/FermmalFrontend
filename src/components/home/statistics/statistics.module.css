@@ -1,0 +1,39 @@
+.wrapper {
+	width: 88dvw;
+	margin: 80px auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    gap: 1rem;
+}
+
+.wrapper h2 {
+    color: #808b93;
+}
+
+.chart_container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+.donughnut_container {
+	height: 400px;
+    transform: rotate(25deg);
+}
+
+.chart_legend {
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.legend_details {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}

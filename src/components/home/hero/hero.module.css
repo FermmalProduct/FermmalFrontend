@@ -1,0 +1,59 @@
+.wrapper {
+  width: 88dvw;
+  margin: 0 auto;
+  height: 651px;
+  border-radius: 10px;
+  background-image: url(/images/mosquito.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  color: white;
+  font-family: Satoshi;
+  font-size: 3.625rem;
+  font-weight: 700;
+  line-height: 3.85rem;
+  text-align: left;
+  margin-left: 3.5rem;
+  padding-top: 12rem;
+}
+
+h5 {
+  font-family: Satoshi;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24.3px;
+  text-align: left;
+  width: 31.9375rem;
+  height: 48px;
+  color: white;
+  margin-left: 3.5rem;
+}
+.hero_buttons {
+  display: flex;
+  margin-left: 3.5rem;
+  padding-top: 1rem;
+}
+
+button {
+    border: 0;
+}
+
+.section_one_login_button {
+  width: 8.6875rem;
+  height: 3.375rem;
+  border-radius: 5px;
+  padding: 1rem;
+  background-color: #f3cd50;
+}
+.section_one_signup_button {
+  margin-left: 1rem;
+  width: 8.6875rem;
+  height: 3.375rem;
+  border-radius: 5px;
+  padding: 1rem;
+  border: 1px solid #f3cd50;
+  color: #f3cd50;
+  background-color: transparent;
+}

@@ -1,0 +1,40 @@
+footer {
+    padding: 3rem 0;
+    background-color: #39434b;
+}
+
+.wrapper {
+    max-width: 88dvw;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.site_map {
+    color: white;
+}
+
+.site_map h2 {
+    margin-top: -8px;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.site_map_links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.site_map_links a {
+    color: white;
+    font-weight: 300;
+}
+
+.social_map_links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
