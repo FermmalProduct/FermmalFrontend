@@ -5,10 +5,10 @@ const WhyFermmal = () => {
   return (
 		<section className={styles.wrapper}>
 			<div className={styles.why_fermmal}>Why Fermmal?</div>
-			<h5 className={styles.section_three_subheading}>
+			<p className={styles.section_three_subheading}>
 				Fermmal is an agency that offers free testing, drugs and mosquito nets
 				to help combat/curb malaria.
-			</h5>
+			</p>
 			<div className={styles.section_three_write_ups}>
 				<div className={styles.write_up_container}>
 					<div className={styles.top_write_up}> Free testing</div>

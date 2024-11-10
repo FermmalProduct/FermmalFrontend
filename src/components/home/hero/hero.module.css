@@ -1,59 +1,103 @@
+.container {
+	width: 88dvw;
+	margin: 0 auto;
+	height: 100dvh;
+	border-radius: 10px;
+	background-image: url(/images/mosquito.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
 .wrapper {
-  width: 88dvw;
-  margin: 0 auto;
-  height: 651px;
-  border-radius: 10px;
-  background-image: url(/images/mosquito.png);
-  background-size: 100%;
-  background-repeat: no-repeat;
+	margin-left: 3rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1.6rem;
 }
 
-h1 {
-  color: white;
-  font-family: Satoshi;
-  font-size: 3.625rem;
-  font-weight: 700;
-  line-height: 3.85rem;
-  text-align: left;
-  margin-left: 3.5rem;
-  padding-top: 12rem;
+.wrapper h1 {
+	color: white;
+	font-family: Satoshi;
+	font-size: 3.625rem;
+	font-weight: 700;
+	line-height: 3.85rem;
+	text-align: left;
 }
 
-h5 {
-  font-family: Satoshi;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 24.3px;
-  text-align: left;
-  width: 31.9375rem;
-  height: 48px;
-  color: white;
-  margin-left: 3.5rem;
+.wrapper h5 {
+	font-family: Satoshi;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24.3px;
+	text-align: left;
+	height: 48px;
+	color: white;
+	max-width: 500px;
 }
+
 .hero_buttons {
-  display: flex;
-  margin-left: 3.5rem;
-  padding-top: 1rem;
+	display: flex;
+	padding-top: 1rem;
+	align-items: center;
+	gap: 2.5rem;
+	margin-top: 0.5rem;
 }
 
-button {
-    border: 0;
+.hero_buttons button {
+	border: 0;
+	border-radius: 5px;
+	padding: 1rem 2.3rem;
+	background-color: #f3cd50;
 }
 
-.section_one_login_button {
-  width: 8.6875rem;
-  height: 3.375rem;
-  border-radius: 5px;
-  padding: 1rem;
-  background-color: #f3cd50;
+.hero_buttons button:nth-child(2) {
+	border: 1px solid #f3cd50;
+	color: #f3cd50;
+	background-color: transparent;
 }
-.section_one_signup_button {
-  margin-left: 1rem;
-  width: 8.6875rem;
-  height: 3.375rem;
-  border-radius: 5px;
-  padding: 1rem;
-  border: 1px solid #f3cd50;
-  color: #f3cd50;
-  background-color: transparent;
+
+@media screen and (max-width: 874px) {
+	.container {
+		height: 80dvh;
+		background-size: cover;
+	}
+	.wrapper h5 {
+		display: none;
+	}
+
+	.wrapper h1 {
+		font-size: 2rem;
+	}
+}
+
+@media screen and (max-width: 474px) {
+	.wrapper {
+		margin-left: 0;
+		padding: 0 1rem;
+		display: flex;
+		flex-direction: column;
+		gap: 1.6rem;
+	}
+
+	.wrapper h1 {
+		font-size: 1.5rem;
+	}
+
+	.hero_buttons {
+		display: flex;
+		justify-content: center;
+		gap: 1rem;
+		margin-top: 0.5rem;
+	}
+
+	.hero_buttons button {
+		border: 0;
+		border-radius: 5px;
+		padding: .5rem 1.6rem;
+		background-color: #f3cd50;
+    font-size: 1rem;
+	}
 }

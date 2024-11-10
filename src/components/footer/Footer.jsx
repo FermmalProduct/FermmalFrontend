@@ -43,6 +43,10 @@ const Footer = () => {
 					</div>
 				</div>
 			</div>
+
+			<div className={style.copyright}>
+				<p>©Fermmal. All rigths reserved</p>
+			</div>
 		</footer>
 	);
 };

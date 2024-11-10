@@ -10,19 +10,19 @@ const Homepage = () => {
 			<Herosection />
 
 			{/* second section with value Proposition */}
-			<section className={styles.section_two}>
-				<div className={styles.value_proposition}>Value Proposition</div>
+			<div className={styles.section_two}>
+				<h2 className={styles.value_proposition}>Value Proposition</h2>
 				<img
 					className={styles.balance_icon}
 					src={"/icons/value-scale.svg"}
 					alt="balance"
 				/>
-				<h5 className={styles.section_two_subheading}>
+				<p className={styles.section_two_subheading}>
 					Empowering communities in the fight against malaria with free testing,
 					life-saving medications, and protective mosquito nets. Together, we
 					can create a healthier, malaria-free future.
-				</h5>
-			</section>
+				</p>
+			</div>
 
 			<WhyFermmal />
 

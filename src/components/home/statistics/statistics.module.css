@@ -21,8 +21,7 @@
 }
 
 .donughnut_container {
-	height: 400px;
-    transform: rotate(25deg);
+	height: 350px;
 }
 
 .chart_legend {
@@ -33,7 +32,14 @@
 }
 
 .legend_details {
-    display: flex;
+    display: grid;
+    grid-template-columns: 40px 1fr;
     align-items: center;
     gap: .8rem;
+}
+
+@media screen and (max-width: 768px) {
+    .chart_container {
+        flex-direction: column;
+    }
 }
