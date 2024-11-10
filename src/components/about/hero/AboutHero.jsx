@@ -7,8 +7,8 @@ const AboutHerosection = () => {
 			<h2>We’re kicking against <br /> malaria.</h2>
 
 			<div className={styles.hero_buttons}>
-				<button className={styles.section_one_login_button}>Log in</button>
-				<button className={styles.section_one_signup_button}>Sign Up</button>
+				<button>Log in</button>
+				<button>Sign Up</button>
 			</div>
 		</section>
 	);

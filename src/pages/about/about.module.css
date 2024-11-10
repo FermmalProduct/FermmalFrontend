@@ -1,54 +1,82 @@
 .wrapper {
-    border: 0;
-    width: 88dvw;
-    margin: 0 auto;
+	border: 0;
+	width: 88dvw;
+	margin: 0 auto;
 }
 
 .inner_wrapper {
-    width: 88%;
-    margin: 60px auto;
+	width: 88%;
+	margin: 60px auto;
 }
 
-.story {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
-    margin-bottom: 5rem;
+.story_wrapper {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 3rem;
+	margin-bottom: 5rem;
 }
 
 .story_content h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-    color: #39434B;
+	font-size: 1.5rem;
+	margin-bottom: 1.5rem;
+	color: #39434b;
 }
 
 .story_content p {
-    font-size: 1rem;
-    color: #2B2B2B;
+	font-size: 1rem;
+	color: #2b2b2b;
 }
 
 .mission {
-    margin-bottom: 5rem;
+	margin-bottom: 5rem;
 }
 
-.mission h2,
-.vision h2 {
-    text-align: center;
-    color: #39434B;
-    font-size: 3rem;
-    margin-bottom: 2rem;
+.mission > h2,
+.story > h2,
+.vision > h2 {
+	text-align: center;
+	color: #39434b;
+	font-size: 3rem;
+	margin-bottom: 2rem;
 }
 
-.mission p,
-.vision p {
-    font-size: 1rem;
-    color: #2B2B2B;
-    width: 60%;
-    margin: 0 auto;
-    margin-bottom: 3rem;
+.mission > p,
+.story > p,
+.vision > p {
+	font-size: 1rem;
+	color: #2b2b2b;
+	width: 60%;
+	margin: 0 auto;
+	margin-bottom: 3rem;
 }
 
 .mission img,
 .vision img {
-    width: 100%;
+	width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+	.inner_wrapper {
+		width: 100%;
+	}
+
+	.mission > h2,
+	.story > h2,
+	.vision > h2 {
+		text-align: left;
+		font-size: 2rem;
+		margin-bottom: 1.3rem;
+	}
+
+	.mission > p,
+	.story > p,
+	.vision > p {
+		width: 100%;
+		margin-bottom: 1.5rem;
+	}
+
+	.story_wrapper {
+		grid-template-columns: 1fr;
+		gap: 1rem;
+	}
 }

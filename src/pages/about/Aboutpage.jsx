@@ -10,20 +10,29 @@ const Aboutpage = () => {
 
 			<div className={styles.inner_wrapper}>
 				<section className={styles.story}>
-					<div className={styles.story_content}>
-						<h2>Our Story</h2>
-						<p>
-							We are working to combat malaria in Nigeria, addressing the needs
-							of both young and old, across all genders.
-						</p>
-					</div>
-					<div className={styles.story_content}>
-						<h2>Contact Monitoring</h2>
-						<p>
-							The goal of contact monitoring is to detect new infections early,
-							provide timely treatment, This strategy is particularly useful to
-							eliminate malaria or in controlling outbreaks.
-						</p>
+					<h2>Our Story</h2>
+					<p>
+						We are working to combat malaria in Nigeria, addressing the needs of
+						both young and old, across all genders.
+					</p>
+
+					<div className={styles.story_wrapper}>
+						<div className={styles.story_content}>
+							<h2>Contact Monitoring</h2>
+							<p>
+								The goal of contact monitoring is to detect new infections
+								early, provide timely treatment, This strategy is particularly
+								useful to eliminate malaria or in controlling outbreaks.
+							</p>
+						</div>
+						<div className={styles.story_content}>
+							<h2>5 years of intense research</h2>
+							<p>
+								The ultimate aim of intense malaria research develop more
+								effective strategies to prevent, treat, and ultimately eradicate
+								malaria in Nigeria.
+							</p>
+						</div>
 					</div>
 				</section>
 

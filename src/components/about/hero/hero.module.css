@@ -1,43 +1,70 @@
 .wrapper {
-  width: 88dvw;
-  margin: 0 auto;
-  height: 651px;
-  border-radius: 10px;
-  background-image: url(/images/about-hero.png);
-  background-size: 100%;
-  background-repeat: no-repeat;
+	width: 88dvw;
+	margin: 0 auto;
+	height: 100dvh;
+	border-radius: 10px;
+	background-image: url(/images/about-hero.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
 }
 
 .wrapper h2 {
-  color: white;
-  font-size: 3.625rem;
-  text-align: center;
+	color: white;
+	font-size: 3.625rem;
+	text-align: center;
 }
 
 .hero_buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	padding-top: 1rem;
+	align-items: center;
+	justify-content: center;
+	gap: 2.5rem;
+	margin-top: 0.5rem;
 }
 
-button {
-    border: 0;
+.hero_buttons button {
+	border: 0;
+	border-radius: 5px;
+	padding: 1rem 2.3rem;
+	background-color: #f3cd50;
 }
 
-.section_one_login_button {
-  width: 8.6875rem;
-  height: 3.375rem;
-  border-radius: 5px;
-  padding: 1rem;
-  background-color: #f3cd50;
+.hero_buttons button:nth-child(2) {
+	border: 1px solid #f3cd50;
+	color: #f3cd50;
+	background-color: transparent;
 }
-.section_one_signup_button {
-  margin-left: 1rem;
-  width: 8.6875rem;
-  height: 3.375rem;
-  border-radius: 5px;
-  padding: 1rem;
-  border: 1px solid #f3cd50;
-  color: #f3cd50;
-  background-color: transparent;
+
+@media screen and (max-width: 874px) {
+	.wrapper {
+		height: 80dvh;
+		background-size: cover;
+    background-position: center;
+	}
+
+	.wrapper h2 {
+		font-size: 2rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero_buttons {
+		display: flex;
+		justify-content: center;
+		gap: 1rem;
+		margin-top: 0.5rem;
+	}
+
+	.hero_buttons button {
+		padding: 0.5rem 1.6rem;
+		font-size: 1rem;
+	}
 }

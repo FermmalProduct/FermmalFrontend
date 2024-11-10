@@ -43,7 +43,7 @@ const Navbar = () => {
 				</div>
 			</div>
 
-			<Drawer title="" onClose={onClose} open={open} height={"40dvh"}>
+			<Drawer title="" onClose={onClose} open={open}>
 				<div className={styles.mobile_links_wrapper}>
 					{navLinks.map((link) => (
 						<NavLink
