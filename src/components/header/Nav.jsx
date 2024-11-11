@@ -1,5 +1,5 @@
-import { navLinks } from "../../data/navlinks";
-import { NavLink } from "react-router-dom";
+import { navLinks } from "../../data/links";
+import { Link, NavLink } from "react-router-dom";
 import styles from "./nav.module.css";
 import { Button, Drawer } from "antd";
 import { FiMenu } from "react-icons/fi";
@@ -19,9 +19,9 @@ const Navbar = () => {
 	return (
 		<nav>
 			<div className={styles.nav_wrapper}>
-				<div className={styles.logo}>
+				<Link to={"/"} className={styles.logo}>
 					<img src={"/icons/fermmal-logo.svg"} alt="" />
-				</div>
+				</Link>
 				<div className={styles.links_wrapper}>
 					{navLinks.map((link) => (
 						<NavLink

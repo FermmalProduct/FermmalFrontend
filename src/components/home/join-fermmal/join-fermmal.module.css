@@ -1,0 +1,52 @@
+.join_fermmal {
+	width: 88dvw;
+	margin: 80px auto;
+	background-color: #d5e4ef;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	border-radius: 10px;
+	padding: 20px;
+}
+
+.join_fermmal .content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 4rem;
+}
+
+.join_fermmal .content .text_section {
+	color: black;
+	text-align: left;
+}
+
+.join_fermmal .content .text_section h3 {
+	font-size: 3rem;
+	font-weight: 500;
+}
+
+.join_fermmal .content button {
+	background: #f3cd50;
+	border: 0;
+	border-radius: 10px;
+	padding: 0.8rem 2rem;
+}
+
+.join_fermmal .image_section img {
+	width: 100%;
+	border-radius: 10px;
+}
+
+@media screen and (max-width: 968px) {
+	.join_fermmal {
+		grid-template-columns: 1fr;
+		gap: 2rem;
+	}
+}
+
+@media screen and (max-width: 574px) {
+	.join_fermmal .content .text_section h3 {
+		font-size: 1.7rem;
+		margin-bottom: 1rem;
+	}
+}

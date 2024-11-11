@@ -1,5 +1,6 @@
 
 import Herosection from "../../components/home/hero/Hero";
+import JoinFermmal from "../../components/home/join-fermmal/JoinFermmal";
 import Statistics from "../../components/home/statistics/Statistics";
 import WhyFermmal from "../../components/home/why-fermmal/WhyFermmal";
 import styles from "./homepage.module.css";
@@ -44,22 +45,7 @@ const Homepage = () => {
 				</video>
 			</section>
 
-      <section className={styles.join_fermmal}>
-        <div className={styles.content}>
-          <div className={styles.text_section}>
-            <h3>The malaria app for Nigerians</h3>
-            <p>Free testing, drugs, and mosquito nets to help combat malaria.</p>
-          </div>
-
-          <button type="button">Join Fermmal</button>
-        </div>
-
-        <div className={styles.image_section}>
-        <img src="/images/mobile-app.jpg" alt="fermmal mobile app" />
-
-        </div>
-
-			</section>
+			<JoinFermmal />
 		</div>
 	);
 }

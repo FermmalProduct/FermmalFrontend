@@ -1,0 +1,111 @@
+.banner,
+.booking {
+	background-color: #fcf3d5;
+	padding: 2rem 5rem;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.banner h2,
+.booking h2 {
+	font-size: 2.4rem;
+	margin-bottom: 1rem;
+	color: #39434b;
+}
+
+.booking h2 {
+	text-align: center;
+}
+
+.banner p {
+	color: #2b2b2b;
+	max-width: 451px;
+}
+
+.products_wrapper {
+	width: 88dvw;
+	margin: 0 auto;
+	margin-top: 3rem;
+}
+
+.product_card_wrapper {
+	margin-bottom: 3rem;
+}
+
+.buttons {
+	display: flex;
+	padding-top: 1rem;
+	align-items: center;
+	gap: 2.5rem;
+	margin-top: 0.5rem;
+}
+
+.buttons button,
+.booking button {
+	border: 0;
+	border-radius: 5px;
+	padding: 1rem 2.3rem;
+	background-color: #f3cd50;
+}
+
+.buttons button:nth-child(2) {
+	border: 1px solid #f3cd50;
+	color: #f3cd50;
+	background-color: transparent;
+}
+
+.booking {
+	align-items: center;
+	justify-content: center;
+}
+
+.booking p {
+	max-width: 554px;
+	text-align: center;
+}
+
+.booking button {
+	width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+	.banner,
+	.booking {
+		padding: 2rem;
+		gap: 1.3rem;
+	}
+
+	.banner h2,
+	.booking h2 {
+		font-size: 1.4rem;
+		text-align: left;
+	}
+
+	.buttons {
+		display: flex;
+		gap: 1rem;
+		margin-top: 0.5rem;
+	}
+
+	.buttons button {
+		padding: 0.5rem 1.6rem;
+		font-size: 1rem;
+	}
+
+	.booking {
+		align-items: start;
+		justify-content: start;
+	}
+
+	.booking p {
+		max-width: 554px;
+		text-align: left;
+	}
+}
+
+@media screen and (max-width: 454px) {
+	.booking button {
+		width: fit-content;
+	}
+}
