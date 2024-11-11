@@ -1,0 +1,35 @@
+.search_bar {
+	width: 100%;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.search_bar input {
+	width: 100%;
+	padding: 0.8rem 1.5rem;
+	border-radius: 10px;
+	border: 1px solid rgba(128, 128, 128, 0.785);
+	outline: 1px solid rgba(128, 128, 128, 0.785);
+	box-shadow: none;
+}
+
+.search_bar svg {
+	position: absolute;
+	right: 8px;
+	font-size: 24px;
+}
+
+@media screen and (max-width: 554px) {
+	.search_bar svg {
+		font-size: 16px;
+	}
+
+	.search_bar input {
+		padding: 0.8rem 1rem;
+	}
+
+	.search_bar input::placeholder {
+		font-size: 12px;
+	}
+}
