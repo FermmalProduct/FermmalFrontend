@@ -1,0 +1,163 @@
+.container {
+	width: 88dvw;
+	margin: 0 auto;
+}
+
+.banner {
+	display: flex;
+	justify-content: space-between;
+	gap: 2rem;
+	margin-bottom: 5rem;
+	margin-top: 2rem;
+}
+
+.banner h2 {
+	color: #39434b;
+	font-size: 3rem;
+	max-width: 685px;
+}
+
+.featured_blog {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	gap: 1rem;
+}
+
+.featured_blog img {
+	width: 368px;
+	height: 220px;
+}
+
+.trending_caption {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.subscribe,
+.blog_category {
+	background-color: #fcf3d5;
+	padding: 2rem 5rem;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	margin-bottom: 5rem;
+}
+
+.subscribe h2,
+.blog_category h2 {
+	font-size: 2.4rem;
+	margin-bottom: 1rem;
+	color: #39434b;
+	text-align: center;
+}
+
+.subscribe_input {
+	width: 100%;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.subscribe_input input {
+	width: 100%;
+	padding: 0.8rem 1.5rem;
+	border-radius: 10px;
+	border: 1px solid rgba(128, 128, 128, 0.785);
+	outline: 1px solid rgba(128, 128, 128, 0.785);
+	box-shadow: none;
+}
+
+.subscribe_input button {
+	position: absolute;
+	right: 8px;
+	font-size: 0.8rem;
+	background-color: #f3cd50;
+}
+
+.subscribe_input button:hover {
+	border: 1px solid #f3cd50 !important;
+	background-color: transparent !important;
+}
+
+.collapse_container {
+	margin-top: 3rem;
+	margin-bottom: 5rem;
+}
+.collapse_description {
+	margin-bottom: .4rem;
+}
+
+.the_article {
+	text-align: center;
+	font-size: 2.4rem;
+	color: #39434b;
+}
+
+@media screen and (max-width: 878px) {
+	.container {
+		width: 100dvw;
+		margin: 0;
+	}
+
+	.banner {
+		width: 88dvw;
+		margin: 0 auto;
+		margin-bottom: 5rem;
+		margin-top: 2rem;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.collapse_container {
+		width: 88dvw;
+		margin: 0 auto;
+		margin-top: 3rem;
+		margin-bottom: 5rem;
+	}
+
+	.banner h2 {
+		text-align: center;
+	}
+
+	.featured_blog img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.subscribe,
+	.blog_category {
+		padding: 2rem;
+		gap: 1.3rem;
+	}
+
+	.subscribe h2,
+	.the_article,
+	.blog_category h2,
+	.banner h2 {
+		font-size: 1.4rem;
+	}
+
+	.collapse_label {
+		font-size: 1.2rem;
+	}
+}
+
+@media screen and (max-width: 554px) {
+	.subscribe_input svg {
+		font-size: 16px;
+	}
+
+	.subscribe_input input {
+		padding: 0.8rem 1rem;
+	}
+
+	.subscribe_input input::placeholder {
+		font-size: 12px;
+	}
+}
