@@ -4,11 +4,13 @@ import styles from "./hero.module.css";
 const AboutHerosection = () => {
 	return (
 		<section className={styles.wrapper}>
-			<h2>We’re kicking against <br /> malaria.</h2>
+			<h2>
+				We’re kicking against <br /> malaria.
+			</h2>
 
 			<div className={styles.hero_buttons}>
-				<button>Log in</button>
-				<button>Sign Up</button>
+				<LoginButton />
+				<SignupButton />
 			</div>
 		</section>
 	);

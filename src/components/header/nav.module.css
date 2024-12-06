@@ -18,17 +18,6 @@ nav {
 	gap: 3rem;
 }
 
-.login_button {
-	background: #f3cd50;
-	border: 0;
-	border-radius: 10px;
-	padding: 0.8rem 2rem;
-}
-
-.login_button:hover {
-	cursor: pointer;
-}
-
 .mobile_menu {
 	display: none;
 }

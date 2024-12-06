@@ -14,8 +14,8 @@ const ProductsPage = () => {
 					mosquito repellent cream. Ideal for outdoor and indoor use
 				</p>
 				<div className={style.buttons}>
-					<button>Log in</button>
-					<button>Sign Up</button>
+					<LoginButton />
+					<SignupButton />
 				</div>
 			</div>
 

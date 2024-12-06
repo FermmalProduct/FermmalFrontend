@@ -1,5 +1,7 @@
 import React from 'react'
 import styles from "./hero.module.css"
+import LoginButton from '../../buttons/LoginButton';
+import SignupButton from '../../buttons/SignupButton';
 
 const Herosection = () => {
   return (
@@ -13,8 +15,8 @@ const Herosection = () => {
 					it’s caused by bites of infected female Anopheles mosquitoes.
 				</h5>
 				<div className={styles.hero_buttons}>
-					<button>Log in</button>
-					<button>Sign Up</button>
+					<LoginButton />
+					<SignupButton />
 				</div>
 			</div>
 		</section>

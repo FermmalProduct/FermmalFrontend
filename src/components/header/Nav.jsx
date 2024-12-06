@@ -4,6 +4,7 @@ import styles from "./nav.module.css";
 import { Button, Drawer } from "antd";
 import { FiMenu } from "react-icons/fi";
 import { useState } from "react";
+import LoginButton from "../buttons/LoginButton";
 
 const Navbar = () => {
 	const [open, setOpen] = useState(false);
@@ -33,7 +34,7 @@ const Navbar = () => {
 					))}
 				</div>
 				<div className={styles.login}>
-					<button className={styles.login_button}>Log in</button>
+					<LoginButton />
 				</div>
 
 				<div className={styles.mobile_menu}>

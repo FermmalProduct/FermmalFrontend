@@ -23,24 +23,11 @@
 	margin-top: 0.5rem;
 }
 
-.hero_buttons button {
-	border: 0;
-	border-radius: 5px;
-	padding: 1rem 2.3rem;
-	background-color: #f3cd50;
-}
-
-.hero_buttons button:nth-child(2) {
-	border: 1px solid #f3cd50;
-	color: #f3cd50;
-	background-color: transparent;
-}
-
 @media screen and (max-width: 874px) {
 	.wrapper {
 		height: 80dvh;
 		background-size: cover;
-    background-position: center;
+		background-position: center;
 	}
 
 	.wrapper h2 {
@@ -49,22 +36,17 @@
 }
 
 @media screen and (max-width: 768px) {
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
 
-  .hero_buttons {
+	.hero_buttons {
 		display: flex;
 		justify-content: center;
 		gap: 1rem;
 		margin-top: 0.5rem;
-	}
-
-	.hero_buttons button {
-		padding: 0.5rem 1.6rem;
-		font-size: 1rem;
 	}
 }
