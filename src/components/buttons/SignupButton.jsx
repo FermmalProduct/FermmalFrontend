@@ -8,10 +8,7 @@ const SignupButton = () => {
 	const showModal = () => {
 		setIsModalOpen(true);
 	};
-	const handleOk = () => {
-		setIsModalOpen(false);
-	};
-	const handleCancel = () => {
+	const closeModal = () => {
 		setIsModalOpen(false);
 	};
 	return (
@@ -23,13 +20,14 @@ const SignupButton = () => {
 			<Modal
 				title=""
 				open={isModalOpen}
-				onOk={handleOk}
-				onCancel={handleCancel}
+				onClose={closeModal}
+				onCancel={closeModal}
 				centered
-				okButtonProps={{ style: { backgroundColor: "#f3cd50" } }}
-				okText="Submit"
+				footer={null}
+				width={"70dvw"}
+				className={styles.modal_wrapper}
 			>
-				<SignupForm />
+				<SignupForm onClose={closeModal} />
 			</Modal>
 		</>
 	);

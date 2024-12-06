@@ -1,3 +1,7 @@
+.modal_wrapper > div > div {
+	padding: 0 !important;
+}
+
 .login_button,
 .sign_up_button {
 	border-radius: 8px;
