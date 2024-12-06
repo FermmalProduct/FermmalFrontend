@@ -3,6 +3,9 @@ import style from "./products.module.css";
 import { products } from "../../data/others";
 import ProductCard from "../../components/product-card/ProductCard";
 import JoinFermmal from "../../components/home/join-fermmal/JoinFermmal";
+import LoginButton from "../../components/buttons/LoginButton";
+import SignupButton from "../../components/buttons/SignupButton";
+
 
 const ProductsPage = () => {
 	return (
